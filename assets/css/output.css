@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7926C6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.hero-header {
+  animation-name: hero-section;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  background-size: cover;
+}
+
+@keyframes hero-section {
+  0% {
+    background-image: url(../img/hero-bg-1.jpg);
+  }
+  50% {
+    background-image: url(../img/hero-bg-3.jpg);
+  }
+  100% {
+    background-image: url(../img/hero-bg-4.jpg);
+  }
+}
+.nav-items ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-items ul li {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 14px;
+}
+
+.order-nav button {
+  background: linear-gradient(135deg, #7926C6 80%, #6d22b3 20%);
+  font-weight: 600;
+}
+.order-nav button:hover {
+  background: linear-gradient(135deg, #ffffff 80%, #e5e5e5 20%);
+}
+.order-nav button:hover a, .order-nav button:hover i {
+  color: #111;
+}
+
+.bottom-order button {
+  background: linear-gradient(#d62c6b, #841ca4);
+  font-weight: 600;
+}
+.bottom-order button:hover {
+  background: linear-gradient(135deg, #ffffff 80%, #e5e5e5 20%);
+}
+.bottom-order button:hover a, .bottom-order button:hover i {
+  color: #111;
+}
+
+.nav-items a {
+  position: relative;
+}
+.nav-items a:hover {
+  color: #ff344f;
+}
+
+.nav-items a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff344f;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.nav-items a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.online-ordering::before {
+  content: "";
+  color: white;
+  font-size: 4.5rem;
+  animation-name: online-order;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  transition: transform 0.25s linear;
+}
+
+@keyframes online-order {
+  0% {
+    content: "GET YOUR RAMADAN FOODS IN PACKS ..";
+  }
+  20% {
+    content: "DELIVERY AROUND LAGOS CITY ..";
+  }
+  50% {
+    content: "HUNGRY? WHAT ARE YOU WAITING FOR?";
+  }
+  100% {
+    content: "ONLINE ORDERING NOW AVAILABLE ..";
+  }
+}
+@media screen and (max-width: 733px) {
+  .online-ordering::before {
+    font-size: 3rem;
+  }
+}
+#offers {
+  font-family: "Comic Sans MS", cursive;
+}
+
+.mini {
+  background: linear-gradient(to right, red, white, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.mini::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.categories ul li {
+  margin: 1.2rem;
+  margin-left: initial;
+  margin-right: initial;
+}
+
+.categories h1 {
+  position: relative;
+}
+
+.categories h1::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background-color: #ff344f;
+  margin-bottom: 4px;
+}
+
+.visa p i {
+  margin: 10px;
+}
+
+.side-button button {
+  background: linear-gradient(135deg, white 80%, #6d22b3 20%);
+}
+.side-button button a {
+  color: #6d22b3;
+}
+
+/*# sourceMappingURL=output.css.map */
